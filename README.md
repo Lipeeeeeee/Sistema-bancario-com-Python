@@ -2,7 +2,8 @@
 
 Sistema bancário simples realizado como desafio de projeto no bootcamp Python AI backend da DIO patrocinado pela VIVO.
 
-# V1
+
+# V1 - Conhecimentos básicos
 
 ## Funções propostas
 
@@ -18,7 +19,8 @@ Para sacar, existem mais condições, onde um saque também tem que ser positivo
 
 Somente mostra o extrato da conta após as operações de depósito e saque realizadas, no formato "OPERAÇÃO: R$ 0.00", e ao final mostrando o saldo no mesmo formato sendo OPERAÇÃO = saldo.
 
-# V2
+
+# V2 - Uso da Programação Funcional
 
 ## Funções propostas
 
@@ -35,3 +37,18 @@ Os usuários criados deverão ser armazenados em uma lista. Cada usuário é com
 ### Criar conta corrente
 
 As contas criadas deverão ser armazenadas em uma lista. Cada conta é composta por uma agência, um número da conta, e um usuário, o dono da conta, sendo o número da conta um incremental e a agência uma constante "0001". O usuário pode ter mais de uma conta, mas uma conta pertence a um só usuário.
+
+
+# V3 - Uso da Programação Orientada a Objetos
+
+## Funções propostas
+
+### Criação de classes para o sistema
+
+De início, foram adicionadas as classes de Cliente, da Conta e das operações bancárias de Depósito e Saque, com o objetivo de armazenar os dados de cada um em sua própria instância de objeto, em vez de armazenar em um dicionário. após isso, foram criadas as classes de Histórico, Conta Corrente(herdeira de Conta), Pessoa Física(herdeira de Cliente), e Transação(interface para as classes de Saque e Depósito), seguindo o UML a seguir:
+
+![UML](UML-sistema-bancario.png)
+
+### Dessafio extra
+
+Após a implementação e objetificação do sistema, foi proposto como desafio tratar o Menu como um objeto também, fazendo ele funcionar com as outras classes já modeladas, assim concluindo a migração de paradigma do projeto.
